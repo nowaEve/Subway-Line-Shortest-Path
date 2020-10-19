@@ -1,7 +1,7 @@
 package subwayModel;
 
 public class ResultModel {
-	private StationModel start; //题目要求起点
+	private StationModel start; //起点
 	private StationModel end;   //途中到每个点最近的路，该点作为终点
 	private int distance = 0;
 	public int getDistance() {

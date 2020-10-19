@@ -97,6 +97,16 @@ public class MainUtil {
 			System.out.println("起点不存在");
 			System.exit(1);
 		}
+		StationModel endStation = new StationModel();
+		endStation = findStation(end);
+		if(endStation==null) {
+			System.out.println("终点不存在");
+			System.exit(1);
+		}
+		if(start.equals(end)) {
+			System.out.print("已经到达终点"+start);
+			System.exit(1);
+		}
 		//构建起点结果
 		ResultModel startResult = new ResultModel();
 		startResult.setDistance(0);
